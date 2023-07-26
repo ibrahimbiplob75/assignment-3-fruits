@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 Fruits-market</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <!-- Font lato  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@800&display=swap"
+        rel="stylesheet">
+
+        <style>
+            body{
+                font-family: 'Lato', sans-serif;
+                font-family: 'Manrope', sans-serif;
+                font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <nav class="mt-20 ml-24 mr-24">
+            <div class="navbar invisible lg:visible bg-[#F85559] h-32 rounded-full justify-between">
+                <div>
+                    <ul class="flex flex-row text-[white] text-2xl font-sans m-10 gap-5">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <img src="images/logo.png">
+                    <a class=" p-3 text-[white] font-sans  text-5xl font-bold">Fruit Burst</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered w-28 rounded-full md:w-auto mr-8" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mx-auto mt-24 text-center">
+            <div class="carousel w-3/4  items-center relative  opacity-70">
+                <div id="slide1" class="carousel-item relative  w-full mx-auto">
+                    <img src="images/banner1.png" class="max-w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class=" absolute left-0 right-0 mt-10">
+                        <h1 class="text-[white] font-sans font-extrabold text-6xl">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-[white] font-sans mt-7 text-2xl">We supply highly quality organic products</p>
+                    
+                    
+                        <button class="mt-5 btn btn-secondary">Shop now</button>
+                    </div>
+                </div>
+               
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class=" absolute left-0 right-0 mt-10">
+                        <h1 class="text-[white] font-sans font-extrabold text-6xl">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-[white] font-sans mt-7 text-2xl">We supply highly quality organic products</p>
+                    
+                    
+                        <button class="mt-5 btn btn-secondary">Shop now</button>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class=" absolute left-0 right-0 mt-10">
+                        <h1 class="text-[white] font-sans font-extrabold text-6xl">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-[white] font-sans mt-7 text-2xl">We supply highly quality organic products</p>
+                    
+                    
+                        <button class="mt-5 btn btn-secondary">Shop now</button>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class=" absolute left-0 right-0 mt-10">
+                        <h1 class="text-[white] font-sans font-extrabold text-6xl">Exotic tastes at your <br>doorstep</h1>
+                        <p class="text-[white] font-sans mt-7 text-2xl">We supply highly quality organic products</p>
+                    
+                    
+                        <button class="mt-5 btn btn-secondary">Shop now</button>
+                    </div>
+                </div>
+            
+            </div>
+          
+            <div class="flex flex-row  bg-white rounded-md p-12 relative -mt-20 gap-16 w-3/5 mx-auto justify-end">
+                <div class="">
+                    <img src="images/fruit1.png" alt="">
+                    <h3 class="text-center font-sans">Apple</h3>
+                </div>
+                <div class="">
+                    <img src="images/fruit2.png" alt="">
+                    <h3>Orange</h3>
+                </div>
+                <div class="">
+                    <img src="images/fruit3.png" alt="">
+                    <h3>Mango </h3>
+                </div>
+                <div class="">
+                    <img src="images/fruit4.png" alt="">
+                    <h3>Strabery</h3>
+                </div>
+                <div class="">
+                    <img src="images/fruit5.png" alt="">
+                    <h3>Dalim</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
